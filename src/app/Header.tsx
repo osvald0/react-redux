@@ -1,12 +1,9 @@
 import React from 'react';
 
-interface Props {
-}
-
-const Header: React.FC<Props> = () => {
+const Header: React.FC<{}> = () => {
     return (
         <div className='header'>
-            Welcome to the React Redux Hooks example!
+            <p>Welcome to the React Redux Hooks example!</p>
         </div>
     );
 };

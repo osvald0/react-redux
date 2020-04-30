@@ -24,9 +24,11 @@ const UsersComponent: React.FC<UsersProps> = (props) => {
     return (
         <div className='users'>
             <h1 className='title'>Users:</h1>
-            <div>
+            <div className='list'>
                 {usersData.users.map((user) => (
-                    <p key={user.id}>{user.name}</p>
+                    <div key={user.id} className='user'>
+                        {user.name}
+                    </div>
                 ))}
             </div>
         </div>
